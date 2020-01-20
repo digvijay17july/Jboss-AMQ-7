@@ -39,3 +39,11 @@ Load Balancing
     
 High Availability And System Failover
   
+ * High Availability : System Continues after failure
+ * Failover : Client connection migrate to another server on failure
+ * Artemis server backup strategies : 
+    * Replicas: Live and backup servers 
+    * Shared store : Live and backup servers via shared filesystem
+ * Artemis Client Failover types: 
+    * Automatic:can configure clients to receive status of live and backup servers 
+    * Application level :In JMS set ExceptionListener Class on JMS Connection
