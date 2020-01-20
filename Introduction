@@ -4,3 +4,15 @@ It works on 3 protocols:-
 *OpenWire
 *AMQP
 *MQTT
+
+Components :-
+
+1. AMQ Clients
+2. AMQ Interconnect
+3. AMQ Broker
+4. AMQ Console
+
+* Supports both NIO and AIO
+* XA Transaction Support
+
+
