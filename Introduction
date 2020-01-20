@@ -1,7 +1,7 @@
 *Enterprise Message queue for messaging service.*
 
 It works on 3 protocols:-
-*OpenWire
+*OpenWire 
 *AMQP
 *MQTT
 
@@ -16,3 +16,26 @@ Components :-
 * XA Transaction Support
 
 
+Load Balancing 
+
+* Brokers configurable as groups sharing messaging load.
+* Default metho is round robin
+* Can be configured in broker.xml
+
+  Server Discovery:-
+
+  Options :-
+
+  1. Static: Fixed Configuration using Connectors
+  2. Dynamic: * discovery-group 
+            * boradcast-group
+            * group-name
+  
+  Clustering
+  
+  * used for server-side message load balancing
+  * Two Cluster Topologies:-
+    Symmetric and chain
+    
+High Availability And System Failover
+  
