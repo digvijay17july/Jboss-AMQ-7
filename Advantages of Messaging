@@ -1,0 +1,11 @@
+Purpose of Messaging:-
+
+* Decoupling: Two systems can be mangaged separately.
+* Redundancy: Queue holds the message undtil thr receiver acknowledges the message.
+* Scalability: Scaling with JMS is an easy process , simply increase the processes to receive and process the messages.
+* Resiliency:  If the message receiver fails , down or crashes than JMS Decoupling ensures that it doesn't effect the producer.
+* Delivery Guarantees: The redundancy provided by JMS means that message delivery is guaranteed. In many cases, queues are configured to be durable—their state is even guaranteed to survive a server crash on the JMS broker, because messages are saved to a storage device.
+
+* Ordering Guarantees: Various options are available for controlling the ordering of messages received from a queue. The most common configuration is to provide messages in First In, First Out (FIFO) order.
+
+* Buffering: In situations where messages are produced at a faster rate than they are consumed, the JMS broker is capable of buffering the messages until they are ready for consumption.
